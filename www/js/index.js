@@ -28,6 +28,7 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         $("#testBtn").on("click", function(){
+            alert("hello world ~");
             console.log("test button is clicked !");
         });
     },
