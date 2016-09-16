@@ -1,0 +1,24 @@
+.row.buttons {
+
+}
+
+.row.buttons > div[class*='col'] {
+	padding: 0px;
+}
+
+.row.buttons button {
+	width: 100%;
+}
+
+.row.buttons .glyphicon {
+	display:block;
+	margin-bottom: 10px;
+}
+
+.noBackground, 
+.noBackground:hover, 
+.noBackground:active {
+	border: none;
+	background: transparent;
+	outline: none;
+}

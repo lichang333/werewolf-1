@@ -1,4 +1,4 @@
-#### 狼人杀游戏（werewolf）游戏记录，胜率统计App
+#### 狼人杀（werewolf）游戏数据记录，胜率统计App
 
 * 技术选型
 
@@ -6,6 +6,10 @@
     * 前端 bootstrap v3 + jquery
     * 后端 nodejs (koa, mongoose)
     * 数据库 mongodb
+
+* Nodejs安装
+
+ * 安装nodejs， 参照官网
 
 * android环境的安装
 
@@ -47,7 +51,7 @@
         * cordova run browser
         * 浏览器切换为手机模式，进行调试
 
-    * android
+    * android调试
 
         * 安装好android环境
         * cordova platforms add android
@@ -57,17 +61,38 @@
         * 如果以上都没有问题，这时候应该可以在android设备上运行了
         * 模拟器运行
 
-        先创建模拟器 `"f:\adt-bundle-windows-x86-20130917\sdk\tools\android.bat" avd`  
-        再从弹出的UI中创建一个android模拟器  
-        回到工程执行 cordova run android  
-        我没有成功，报错，未深究
+            先创建模拟器 `"f:\adt-bundle-windows-x86-20130917\sdk\tools\android.bat" avd`  
+            再从弹出的UI中创建一个android模拟器  
+            回到工程执行 cordova run android  
+            我没有成功，报错，未深究
 
-        * android 真机运行
+        * android 真机运行（推荐）
 
-        手机连接电脑，打开usb调试模式  
-        window cmd运行 `adb devices`，如果能显示出设备来，表示设备连接成功  
-        回到工程执行 cordova run android  
-        这时候手机上会提示你是否安装，安装运行。 
-        真机 华为荣耀7i通过，   
-        乐视1 pro不通过（不提示安装，估计是安全设定的问题， 可以通过生成的apk文件手动安装）
+            手机连接电脑，打开usb调试模式  
+            window cmd运行 `adb devices`，如果能显示出设备来，表示设备连接成功  
+            回到工程执行 cordova run android  
+            这时候手机上会提示你是否安装，安装运行。 
+            真机 华为荣耀7i通过，   
+            乐视1 pro不通过（不提示安装，估计是安全设定的问题， 可以通过生成的apk文件手动安装）
+
+
+* 代码热替换
+
+ * plugin安装
+ [https://www.npmjs.com/package/cordova-hot-code-push-local-dev-addon](https://www.npmjs.com/package/cordova-hot-code-push-local-dev-addon)
+
+ * 实测  
+
+   在android可用，修正代码后，等2秒钟，在手机APP中能直接反映  
+   在browser不可用，报错，js加载的时候hot code的2个插件没有加载到，实际跟踪js觉得加载没问题啊。。。
+
+* 开发
+
+    * nodejs
+    ```
+    npm install -g cordova
+    npm install -g nodemon
+    npm install koa --save-dev
+    npm install koa-static --save-dev
+    ```
 

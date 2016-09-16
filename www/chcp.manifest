@@ -1,0 +1,54 @@
+[
+  {
+    "file": "css/index.css",
+    "hash": "de3108e56a36de0c17a76d691b0e4230"
+  },
+  {
+    "file": "css/lib/bootstrap-theme.css",
+    "hash": "c64043a3388612233d7eb947918a9bfc"
+  },
+  {
+    "file": "css/lib/bootstrap.css",
+    "hash": "ad6381ebfa541b55b0152349c6cabf76"
+  },
+  {
+    "file": "html/introduce.html",
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "file": "html/my.html",
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "file": "html/player_add.html",
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "file": "html/player_list.html",
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "file": "html/statistic.html",
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "file": "img/logo.png",
+    "hash": "7e34c95ac701f8cd9f793586b9df2156"
+  },
+  {
+    "file": "index.html",
+    "hash": "1a6c73450f8501624ef7ee5719ea4db9"
+  },
+  {
+    "file": "js/index.js",
+    "hash": "28727a796ed942bfcb118b28d136a693"
+  },
+  {
+    "file": "js/lib/bootstrap.js",
+    "hash": "d5a03d9cca57637f008124916b86b585"
+  },
+  {
+    "file": "js/lib/jquery-1.11.0.js",
+    "hash": "3b80424646a7ecdb19273d86800c1ac0"
+  }
+]
