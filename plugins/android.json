@@ -15,7 +15,14 @@
         },
         "cordova-hot-code-push-local-dev-addon": {
             "PACKAGE_NAME": "ps.zhao.hello"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "ps.zhao.hello"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "ps.zhao.hello"
+        }
+    }
 }

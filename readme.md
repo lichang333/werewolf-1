@@ -76,15 +76,22 @@
             乐视1 pro不通过（不提示安装，估计是安全设定的问题， 可以通过生成的apk文件手动安装）
 
 
-* 代码热替换
+* cordova plugin安装
 
- * plugin安装
- [https://www.npmjs.com/package/cordova-hot-code-push-local-dev-addon](https://www.npmjs.com/package/cordova-hot-code-push-local-dev-addon)
+    * camera  
+ 
+        cordova plugin add cordova-plugin-camera
 
- * 实测  
+    * 代码热替换  
+ 
+        * 安装  
 
-   在android可用，修正代码后，等2秒钟，在手机APP中能直接反映  
-   在browser不可用，报错，js加载的时候hot code的2个插件没有加载到，实际跟踪js觉得加载没问题啊。。。
+            [https://www.npmjs.com/package/cordova-hot-code-push-local-dev-addon](https://www.npmjs.com/package/cordova-hot-code-push-local-dev-addon)
+
+        * 实测  
+
+           在android可用，修正代码后，等2秒钟，在手机APP中能直接反映  
+           在browser不可用，报错，js加载的时候hot code的2个插件没有加载到，实际跟踪js觉得加载没问题啊。。。
 
 * 开发
 
@@ -92,7 +99,13 @@
     ```
     npm install -g cordova
     npm install -g nodemon
-    npm install koa --save-dev
-    npm install koa-static --save-dev
+    npm install
     ```
+
+    * 启动  
+    nodemon server.js
+
+    * 运行  
+    http://localhost:3000/index.html
+
 

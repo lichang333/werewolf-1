@@ -18,11 +18,44 @@
  */
 (function(){
     function init(){
+        initMenu();
         bindEvent();
+    }
+
+
+    function initMenu(){
+        $("#footer div[class^='col-']").on("click", function(e){
+            var $menuDiv = $(e.target);
+            var $btn = $(e.currentTarget).find("button");
+            var pageName = $btn.get(0).name;
+            if(!pageName){
+                return;
+            }
+
+            loadPage(pageName);
+        });
+
+    }
+
+    function loadPage(htmlName, target){
+        target = target || "main";
+
+        // load page
+        var pageName = "html/" + htmlName + ".html";
+        $("#" + target).load(pageName, function(){
+            // add css to button group
+            $("#footer button").removeClass("active");
+            $("#footer button[name='" + htmlName + "']").addClass("active");
+
+            // run page js
+            window[htmlName].init.call();
+        });
     }
 
     function bindEvent(){
     }
 
+
     init();
+    loadPage("introduce");
 })();
