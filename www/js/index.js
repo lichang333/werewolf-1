@@ -16,10 +16,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-(function(){
+var index = (function(){
     function init(){
         initMenu();
         bindEvent();
+        loadPage("introduce");
     }
 
 
@@ -56,6 +57,10 @@
     }
 
 
-    init();
-    loadPage("introduce");
+    return {
+        init:init
+    }
+    
 })();
+
+index.init();

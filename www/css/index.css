@@ -18,3 +18,7 @@
 #footer button.active {
     color: orange;
 }
+
+#footer .buttons {
+    padding-top:10px;
+}

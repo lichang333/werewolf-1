@@ -97,7 +97,6 @@
 
     * nodejs
     ```
-    npm install -g cordova
     npm install -g nodemon
     npm install
     ```

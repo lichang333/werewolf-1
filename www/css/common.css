@@ -29,7 +29,6 @@
 
 /* player */
 .player_list #avatar{
-	display: block;
 	font-size: 50px;
 }
 #avatar_img {
