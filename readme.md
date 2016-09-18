@@ -19,8 +19,9 @@
 
  * android sdk下载
 
-    官方推荐的是studio下载，纯SDK没有找到，这个是非官方的  
-    [http://www.techspot.com/downloads/5425-android-sdk.html](http://www.techspot.com/downloads/5425-android-sdk.html)
+    官方下载地址（画面最下方SDK 工具包， 需要翻墙）：  
+    感谢[cikai](/cikai)友情提示。  
+    [https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html)
 
  * 环境变量设定
 
