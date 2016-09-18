@@ -20,7 +20,7 @@
  * android sdk下载
 
     官方下载地址（画面最下方SDK 工具包， 需要翻墙）：  
-    感谢[cikai](/cikai)友情提示。  
+    感谢[cikai](https://github.com/cikai)友情提示。  
     [https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html)
 
  * 环境变量设定
