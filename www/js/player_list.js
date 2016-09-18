@@ -7,25 +7,23 @@ var player_list = (function(){
 
 	function bindEvent(){
 		// 头像选择
-		$("#avatar").on("click", function(){
-			navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-			    destinationType: Camera.DestinationType.FILE_URI });
-
-			function onSuccess(imageURI) {
-			    var image = $("#avatar_img").get(0);
-			    image.src = imageURI;
-			}
-
-			function onFail(message) {
-			    alert('Failed because: ' + message);
-			}
+		$("#avatar").thumbnailUploader({
+			thumbnailWidth: 100,
+			thumbnailHeight: 100
 		});
 
 		// 登陆按钮
 		var $addBtn = $("#player_add");
 		$addBtn.on("click", function(e){
 			e.preventDefault();
-			alert("功能开发中");
+			
+			var playerInfo = {
+				"thumbnail": $("#avatar").thumbnailUploader("getDataURL"),
+				"name": $("#pName").val(),
+				"nick": $("#nick").val(),
+				"self_introduce": $("#self_introduce").val()
+			}
+			alert(JSON.stringify(playerInfo));
 		});
 
 		// 删除按钮

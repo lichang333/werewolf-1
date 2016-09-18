@@ -1,0 +1,24 @@
+{
+  "name": "werewolf",
+  "version": "1.0.0",
+  "description": "* 技术选型",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yisuren/werewolf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yisuren/werewolf/issues"
+  },
+  "homepage": "https://github.com/yisuren/werewolf#readme",
+  "devDependencies": {
+    "koa": "^1.2.4",
+    "koa-static": "^2.0.0"
+  }
+}

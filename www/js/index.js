@@ -63,4 +63,5 @@ var index = (function(){
     
 })();
 
+common.init();
 index.init();
