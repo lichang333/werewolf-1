@@ -19,8 +19,9 @@
 
  * android sdk下载
 
-    官方推荐的是studio下载，纯SDK没有找到，这个是非官方的  
-    [http://www.techspot.com/downloads/5425-android-sdk.html](http://www.techspot.com/downloads/5425-android-sdk.html)
+    官方下载地址（画面最下方SDK 工具包， 需要翻墙）：  
+    感谢[cikai](https://github.com/cikai)友情提示。  
+    [https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html)
 
  * 环境变量设定
 
@@ -31,17 +32,17 @@
 
  * 更新sdk
 
-  * 代理设定
+    * 代理设定
 
-    打开sdk manager， 设定代理 tools -> options   
-    mirrors.neusoft.edu.cn / 80 / 勾选force的checkbox / 回到主界面  
-    Packages -> Reload， 根据需要下载包 
+        打开sdk manager， 设定代理 tools -> options   
+        mirrors.neusoft.edu.cn / 80 / 勾选force的checkbox / 回到主界面  
+        Packages -> Reload， 根据需要下载包 
   
-  * 安装什么包？
+    * 安装什么包？
 
-    cordova requiremnts 会提示你缺少什么  
-    例如，警告你缺少 Android target: android-23  
-    意思就是说缺少android 23 的api， 那么需要安装android 6.0版本（6.0对应23的api）
+        cordova requiremnts 会提示你缺少什么  
+        例如，警告你缺少 Android target: android-23  
+        意思就是说缺少android 23 的api， 那么需要安装android 6.0版本（6.0对应23的api）
 
 * 代码调试
 
@@ -49,7 +50,7 @@
 
         * cordova platforms add browser
         * cordova run browser
-        * 浏览器切换为手机模式，进行调试
+        * chrome F12 + 切换为手机模式，进行调试
 
     * android调试
 
@@ -90,7 +91,7 @@
 
         * 实测  
 
-           在android可用，修正代码后，等2秒钟，在手机APP中能直接反映  
+           在android真机调试可用，修正代码后，等2秒钟，在手机APP中能直接反映  
            在browser不可用，报错，js加载的时候hot code的2个插件没有加载到，实际跟踪js觉得加载没问题啊。。。
 
 * 开发
