@@ -4,7 +4,18 @@ var common = (function(){
 
 
 	function init() {
+		// initJquery();
 		bindEvent();
+	}
+
+	function initJquery(){
+		var ip = "192.168.1.100";
+		var port = "3000";
+		var oldAjax = $.ajax;
+		$.ajax = function(url, params){
+			url = "http://" + ip + ":" + port + url;
+			return oldAjax.call(url, params);
+		}
 	}
 
 	function bindEvent(){
