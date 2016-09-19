@@ -1,5 +1,4 @@
-platforms
-node_modules
-node_modules
-plugins
+/platforms
+/node_modules
+/plugins
 .chcpenv
