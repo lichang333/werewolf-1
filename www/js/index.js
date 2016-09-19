@@ -20,7 +20,7 @@ var index = (function(){
     function init(){
         initMenu();
         bindEvent();
-        loadPage("introduce");
+        common.loadPage("introduce");
     }
 
 
@@ -33,24 +33,9 @@ var index = (function(){
                 return;
             }
 
-            loadPage(pageName);
+            common.loadPage(pageName);
         });
 
-    }
-
-    function loadPage(htmlName, target){
-        target = target || "main";
-
-        // load page
-        var pageName = "html/" + htmlName + ".html";
-        $("#" + target).load(pageName, function(){
-            // add css to button group
-            $("#footer button").removeClass("active");
-            $("#footer button[name='" + htmlName + "']").addClass("active");
-
-            // run page js
-            window[htmlName].init.call();
-        });
     }
 
     function bindEvent(){

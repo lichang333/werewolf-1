@@ -19,8 +19,24 @@ var common = (function(){
 		props.device = "android";
 	}
 
+	function loadPage(htmlName, target){
+        target = target || "main";
+
+        // load page
+        var pageName = "html/" + htmlName + ".html";
+        $("#" + target).load(pageName, function(){
+            // add css to button group
+            $("#footer button").removeClass("active");
+            $("#footer button[name='" + htmlName + "']").addClass("active");
+
+            // run page js
+            window[htmlName].init.call();
+        });
+    }
+
 	return {
 		"init": init,
+		"loadPage": loadPage,
 		"props": props
 	};
 
