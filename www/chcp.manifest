@@ -1,7 +1,7 @@
 [
   {
     "file": "css/common.css",
-    "hash": "8d0a13854406b7b45f14e22186be7ef0"
+    "hash": "6cc1d99ab7e22cade09732088a3261e4"
   },
   {
     "file": "css/fonts/glyphicons-halflings-regular.eot",
@@ -21,7 +21,7 @@
   },
   {
     "file": "css/index.css",
-    "hash": "ba665096e9aee653d08942a33a67c18d"
+    "hash": "82e723f39bb3cce0fbe8a8cb44ff0c1d"
   },
   {
     "file": "css/lib/bootstrap-theme.css",
@@ -32,36 +32,76 @@
     "hash": "ad6381ebfa541b55b0152349c6cabf76"
   },
   {
+    "file": "html/battle_list.html",
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "file": "html/battle.html",
+    "hash": "12e4e5c362cc6fc54386b3bbf2e76c92"
+  },
+  {
     "file": "html/introduce.html",
-    "hash": "a3883055f5842978a26b46376d3d0e6c"
+    "hash": "889f1335f6c2fb62af1ed6a54a0ecaa4"
   },
   {
     "file": "html/my.html",
     "hash": "9fc8c8a2e76c217cbce5e527ed089243"
   },
   {
-    "file": "html/player_add.html",
-    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    "file": "html/player_list.html",
+    "hash": "ba209125ec40a4597b1660f94f59b25b"
   },
   {
-    "file": "html/player_list.html",
-    "hash": "49eb42fad2b95b15cb908a9fd0807138"
+    "file": "html/player.html",
+    "hash": "e48ef35317684f146858ad779630e35b"
   },
   {
     "file": "html/statistic.html",
     "hash": "b64e3113bcd487677e91413398b83550"
   },
   {
+    "file": "img/base.jpg",
+    "hash": "550f69464a6ba1bd4eec646b0b595cf0"
+  },
+  {
+    "file": "img/introduce_1.png",
+    "hash": "045ac29467fc02745698ce840552d0d9"
+  },
+  {
+    "file": "img/introduce_2.png",
+    "hash": "d8b24dd8c99191a34b856ecde453ff78"
+  },
+  {
+    "file": "img/introduce_3.png",
+    "hash": "d65e5f5a4c7b41b6ee84b6be4114340e"
+  },
+  {
     "file": "img/logo.png",
-    "hash": "7e34c95ac701f8cd9f793586b9df2156"
+    "hash": "cbd6d9c1802ab2b60da8fc77d88ebb93"
   },
   {
     "file": "index.html",
-    "hash": "764f2de8dd5437e01b7c56a24f9d1d07"
+    "hash": "937c203daf340b8b1f66469265b0f083"
+  },
+  {
+    "file": "js/battle_list.js",
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "file": "js/battle.js",
+    "hash": "15af261e9a77e70dc542d828fa971735"
+  },
+  {
+    "file": "js/common.js",
+    "hash": "5020e608815241fdc3943eb7d9e11a4b"
   },
   {
     "file": "js/index.js",
-    "hash": "516c1cdd998442e696a978e4ab850315"
+    "hash": "003ee5d8bb5fb50fefb086e08e5bf9d5"
+  },
+  {
+    "file": "js/introduce.js",
+    "hash": "7a41f5ee237bb829a3b038e43d085ba0"
   },
   {
     "file": "js/lib/bootstrap.js",
@@ -73,6 +113,18 @@
   },
   {
     "file": "js/player_list.js",
-    "hash": "671db1fdc7279b86cb81104791a7201b"
+    "hash": "46926890a2b76cd7654c256695d65d58"
+  },
+  {
+    "file": "js/player.js",
+    "hash": "9cd0eb0f751776744ee9180fc7c8403c"
+  },
+  {
+    "file": "model/Battle.js",
+    "hash": "cd555714e779e69e826e6ac5ab2faaf0"
+  },
+  {
+    "file": "model/Player.js",
+    "hash": "e391f7a6d6264526ede6d2445bc882d9"
   }
 ]
