@@ -23,7 +23,7 @@ PlayerSchema.pre("save", function(next){
 
 
 PlayerSchema.statics.addOrUpdate = function* (playerInfo){
-	console.log("in addOrUpdate ...", playerInfo)
+	console.log("in addOrUpdate ...");
 
 	// delete exists ones
 	var PlayerModel = this;
@@ -45,7 +45,6 @@ PlayerSchema.statics.findAll = function* (){
 	console.log("in find all ...");
 	var PlayerModel = this;
 	var players = yield PlayerModel.find({});
-	console.log(players);
 	return players;
 }
 
