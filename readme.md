@@ -108,4 +108,16 @@
     * 运行  
     http://localhost:3000/index.html
 
+* 其他问题记录
+
+    * 编译成android后，发现ajax请求不能跨域
+
+        * 所有ajax的url都写绝对路径， http://10.12.23.22:3000/players
+        * html头上设定安全规则  
+        `<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">`
+
+    * 2处需要修改ip地址的地方
+
+        * common.js
+        * server.js
 

@@ -83,24 +83,26 @@ function getDisplayList(){
 	for(var key in _playerRateMap){
 		var displayInfo = {};
 		var rateMap = _playerRateMap[key];
-		for(var roleKey in rateMap){
+		for(var roleKey in rateMap) {
 			if(roleKey == roleSelect) {
 				displayInfo["name"] = key;
 				displayInfo["thumbnail"] = getPlayerImgByName(key);
 				displayInfo["total"] = rateMap[roleKey];
 				displayInfo["win"] = rateMap[roleKey+ "_win"];
-				displayInfo["rate"] = rateMap[roleKey+ "_rate"] * 100 + "%";
+				displayInfo["rate"] = rateMap[roleKey+ "_rate"];
+				displayArr.push(displayInfo);
 			}
 		}
-		displayArr.push(displayInfo);
 	}
 
 	var orderPlus = order == "asc" ? 1 : -1;
 	displayArr.sort(function(infoA, infoB){
-		if(infoA == infoB){
+		var rateA = infoA.rate;
+		var rateB = infoB.rate;
+		if(rateA == rateB){
 			return 0;
 		}else {
-			return infoA < infoB ? (1 * orderPlus) : (-1 * orderPlus)
+			return rateA > rateB ? (1 * orderPlus) : (-1 * orderPlus)
 		}
 	});
 
@@ -119,7 +121,7 @@ function drawTable(displayList){
 		$("<td class='player_thumbnail'></td>").append($playerImg).appendTo($tr);
 		$("<td class='player_name'></td>").text(displayItem.name).appendTo($tr);
 		$("<td class='total'></td>").text(displayItem.total).appendTo($tr);
-		$("<td class='rate'></td>").text(displayItem.rate).appendTo($tr);
+		$("<td class='rate'></td>").text(displayItem.rate * 100 + "%").appendTo($tr);
 		$tr.appendTo($tbody);
 	});
 }

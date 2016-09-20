@@ -6,8 +6,9 @@ var parser = require("co-body");
 var router = require("koa-router")();
 var mongoose = require("mongoose");
 
-// var ip = "192.168.1.100";
-var ip = "192.168.196.184";
+// var ip = "192.168.1.104";
+// var ip = "192.168.196.184";
+var ip = "115.28.19.15";
 
 mongoose.connect("mongodb://" + ip + "/test");
 mongoose.connection.on("error", (err) => console.error("mongodb connection error", err));

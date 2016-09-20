@@ -30,8 +30,8 @@ var player_list = (function(){
 			$("<td class='nick'></td>").text(playerItem.nick).appendTo($tr);
 
 			// self_introduce
-			var self_introduce_html = playerItem.self_introduce;
-			$("<td class='self_introduce'></td>").text(self_introduce_html).appendTo($tr);
+			// var self_introduce_html = playerItem.self_introduce;
+			// $("<td class='self_introduce'></td>").text(self_introduce_html).appendTo($tr);
 
 			// delete button
 			var $button = $("<button class='glyphicon glyphicon-remove noBackground' data-name='" + playerItem.name +"'></button>");
@@ -75,10 +75,9 @@ var player_list = (function(){
 				"playerName": playerName
 			}
 		}).then(function(){
-			alert("删除成功 ");	
 			callback();
 		},function(e){
-			alert("error", e);
+			alert(e.statusText);
 		});
 
 	}

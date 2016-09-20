@@ -1,7 +1,7 @@
 [
   {
     "file": "css/common.css",
-    "hash": "6cc1d99ab7e22cade09732088a3261e4"
+    "hash": "5e9ff4f741307c22d6ce7d815ce346f6"
   },
   {
     "file": "css/fonts/glyphicons-halflings-regular.eot",
@@ -33,11 +33,11 @@
   },
   {
     "file": "html/battle_list.html",
-    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    "hash": "44a136dfaeaeab6a5aafd4774185ee3c"
   },
   {
     "file": "html/battle.html",
-    "hash": "12e4e5c362cc6fc54386b3bbf2e76c92"
+    "hash": "e71e6bbacea23e296b2a348bf9408e97"
   },
   {
     "file": "html/introduce.html",
@@ -45,7 +45,7 @@
   },
   {
     "file": "html/my.html",
-    "hash": "9fc8c8a2e76c217cbce5e527ed089243"
+    "hash": "06d908696440e3b1c7c4fe4bd91436f3"
   },
   {
     "file": "html/player_list.html",
@@ -54,10 +54,6 @@
   {
     "file": "html/player.html",
     "hash": "e48ef35317684f146858ad779630e35b"
-  },
-  {
-    "file": "html/statistic.html",
-    "hash": "b64e3113bcd487677e91413398b83550"
   },
   {
     "file": "img/base.jpg",
@@ -81,19 +77,19 @@
   },
   {
     "file": "index.html",
-    "hash": "937c203daf340b8b1f66469265b0f083"
+    "hash": "365fc75bb08976915195314b3c65e2e5"
   },
   {
     "file": "js/battle_list.js",
-    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    "hash": "fb86709d9c2b29d6bb68dbd80dda93b2"
   },
   {
     "file": "js/battle.js",
-    "hash": "15af261e9a77e70dc542d828fa971735"
+    "hash": "53e75afa1a0c0a589efe405c8d6bb72c"
   },
   {
     "file": "js/common.js",
-    "hash": "5020e608815241fdc3943eb7d9e11a4b"
+    "hash": "87730778417b6aa2f0c8cf82ac737982"
   },
   {
     "file": "js/index.js",
@@ -112,16 +108,28 @@
     "hash": "3b80424646a7ecdb19273d86800c1ac0"
   },
   {
+    "file": "js/my.js",
+    "hash": "c46b05b6808f00dd3a5da2a596120add"
+  },
+  {
     "file": "js/player_list.js",
-    "hash": "46926890a2b76cd7654c256695d65d58"
+    "hash": "06119e3e81d913307b4c7be88a11ff80"
   },
   {
     "file": "js/player.js",
-    "hash": "9cd0eb0f751776744ee9180fc7c8403c"
+    "hash": "377fb3b8b7918197ec265118d0a5ea80"
+  },
+  {
+    "file": "js/plugins/PlayerList.js",
+    "hash": "2c0e8ad56d7ec61a618bd77834ac2cc8"
+  },
+  {
+    "file": "js/plugins/ThumbnailUploader.js",
+    "hash": "1048b6120f32b0a0b170488471946fec"
   },
   {
     "file": "model/Battle.js",
-    "hash": "cd555714e779e69e826e6ac5ab2faaf0"
+    "hash": "47640e580134d41dfa6866254cbf29bb"
   },
   {
     "file": "model/Player.js",

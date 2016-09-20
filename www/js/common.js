@@ -20,13 +20,15 @@ var common = (function(){
 				callback();
 			}
 		}, function(e){
-			alert("error");
+			alert(e.statusText);
 		})
 	}
 
 	function majax(url, params){
-		// var ip = "192.168.1.100";
-		var ip = "192.168.196.184";
+		// var ip = "192.168.1.104";
+		// var ip = "192.168.196.184";
+		var ip = "115.28.19.15";
+
 		var port = "3000";
 		url = "http://" + ip + ":" + port + url;
 		return $.ajax(url, params);

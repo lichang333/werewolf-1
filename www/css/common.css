@@ -61,7 +61,7 @@ div.nav {
 }
 
 .player_list_comp .playerItem.selected {
-	border: 1px solid black;
+	border: 2px solid #3e8cd0;
 	border-radius: 4px;
 }
 
@@ -77,11 +77,15 @@ div.nav {
 }
 
 .player_list .table .img {
-	width: 105px;
+	width: 103px;
+}
+
+.player_list .table .name {
+	width: 100px;
 }
 
 .player_list .table .deleteBtn {
-	width: 80px;
+	width: 30px;
 	color: #e27070;
 }
 
@@ -103,6 +107,7 @@ div.nav {
 .battle_list table .createtime {
 	width: 90px;
 }
+
 .battle_list table .victory {
 	width: 50px;
 }
@@ -118,7 +123,15 @@ div.nav {
 .battle_list table .players img{
 	display: inline-block;
 	margin-right: 5px;
+	margin-bottom: 5px;
 	width: 30px;
+}
+
+.battle .roleSelectContainer .nav {
+	float:left;
+	width: 100%;
+	margin-top: 10px;
+	background-color: #ead1ae;
 }
 
 /* my */

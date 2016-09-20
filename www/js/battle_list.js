@@ -10,8 +10,8 @@ function initBattleList(){
 		methods: "get"
 	}).then(function(result){
 		drawBattleTable(result);
-	}, function(){
-		alert("error")
+	}, function(e){
+		alert("error", e);
 	});
 }
 
@@ -93,9 +93,8 @@ function doDelete(battleId, callback){
 		if(callback){
 			callback();
 		}
-		alert("删除成功~");
 	}, function(e){
-		alert("error", e)
+		alert(e.statusText);
 	})
 }
 

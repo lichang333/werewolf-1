@@ -50,7 +50,7 @@ var battle = (function(){
 				method: "post",
 				data: JSON.stringify(info)
 			}).then(function() {
-				alert("登陆成功");
+				common.loadPage("battle_list");
 			}, function(){
 				alert("error");
 			});

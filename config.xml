@@ -26,4 +26,5 @@
     <engine name="android" spec="~5.2.2" />
     <engine name="browser" spec="~4.1.0" />
     <icon src="www/img/logo.png" />
+    <allow-navigation href="*" />
 </widget>

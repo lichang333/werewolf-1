@@ -50,16 +50,21 @@ ThumbnailUploader.prototype = {
 	},
 
 	androidUploaderInit: function(){
-		navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-		    destinationType: Camera.DestinationType.FILE_URI });
+		var _this = this;
 
 		function onSuccess(imageURI) {
-		    canvasOut(imageURI);
+		    _this.canvasOut(imageURI);
 		}
 
 		function onFail(message) {
 		    // alert('Failed because: ' + message);
 		}
+
+		this.baseDom.on("click", function(){
+			navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+			    destinationType: Camera.DestinationType.FILE_URI });
+		});
+
 	},
 
 	browserUploaderInit: function(){
