@@ -18,13 +18,8 @@ var battle = (function(){
 	}
 
 	function getPlayerListData(callback){
-		$.ajax("/players", {
-			method: "get"
-		}).then(function(result){
-			callback(result);
-		}, function(){
-			alert("error");
-		})
+		var playerList = common.props.players;
+		callback(playerList);
 	}
 
 
@@ -51,11 +46,10 @@ var battle = (function(){
 				infos: selectInfo.get()
 			}
 
-			console.log(info);
-			$.ajax("/battles", {
+			common.majax("/battles", {
 				method: "post",
 				data: JSON.stringify(info)
-			}).then(function(){
+			}).then(function() {
 				alert("登陆成功");
 			}, function(){
 				alert("error");

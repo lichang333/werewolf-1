@@ -9,14 +9,8 @@ var player_list = (function(){
 	}
 
 	function initTable(){
-		$.ajax("/players", {
-			method: "get"
-		}).then(function(result){
-
-			drawTable(result);
-		}, function(e){
-			alert("error", e);
-		})
+		var players = common.props.players;
+		drawTable(players);
 	}
 
 	function drawTable(players){
@@ -66,6 +60,7 @@ var player_list = (function(){
 			if(confirm("确定要删除么 ？")){
 				doDelete(playerName, function(){
 					$button.closest("tr").remove();
+					common.initPlayers();
 				});
 			}else{
 			}
@@ -74,7 +69,7 @@ var player_list = (function(){
 	}
 
 	function doDelete(playerName, callback){
-		$.ajax("/players", {
+		common.majax("/players", {
 			method: "delete",
 			data: {
 				"playerName": playerName

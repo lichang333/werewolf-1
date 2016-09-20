@@ -23,11 +23,13 @@ var player = (function(){
 				"nick": $("#nick").val(),
 				"self_introduce": $("#self_introduce").val()
 			}
-			$.ajax("/players", {
+			common.majax("/players", {
 				method: "post",
 				data: JSON.stringify(playerInfo)
 			}).then(function(result){
-				alert("添加成功");
+				common.initPlayers(function(){
+					common.loadPage("player_list");
+				});
 			}, function(){
 				alert("error");
 			})

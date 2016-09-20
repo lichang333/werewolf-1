@@ -82,13 +82,60 @@ div.nav {
 
 .player_list .table .deleteBtn {
 	width: 80px;
-	color:red;
+	color: #e27070;
 }
 
 .player_list .table td {
-	line-height: 100px;
 	text-align:center;
 	overflow:hidden;
 	text-overflow:ellipsis;
+	vertical-align: middle;
 }
 
+
+/* battle */
+
+.battle_list .table td {
+	vertical-align:middle;
+	text-align:center;
+}
+
+.battle_list table .createtime {
+	width: 90px;
+}
+.battle_list table .victory {
+	width: 50px;
+}
+
+.battle_list table .deleteBtn {
+	width: 35px;
+	color: #e27070;
+}
+
+.battle_list table .players {
+	text-align: left;
+}
+.battle_list table .players img{
+	display: inline-block;
+	margin-right: 5px;
+	width: 30px;
+}
+
+/* my */
+.my .options span {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.my .table .player_thumbnail {
+	width: 105px;
+}
+
+.my .table .player_name {
+	width: 80px;
+}
+
+.my .table td {
+	vertical-align:middle;
+	text-align:center;
+}

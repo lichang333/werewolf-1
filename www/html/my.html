@@ -1,4 +1,53 @@
 <div class="my">
-	这个个人信息页<br/>
-	展示个人的战绩等信息
+	<div class="options">
+		<span class="roleSelect">
+			<div class="btn-group" data-toggle="buttons">
+			  <label class="btn btn-default active" data-name="total">
+			    <input type="radio" name="options_rol" autocomplete="off" checked> 全部
+			  </label>
+			  <label class="btn btn-default" data-name="werewolf">
+			    <input type="radio" name="options_rol" autocomplete="off"> 狼人
+			  </label>
+			  <label class="btn btn-default" data-name="prophet">
+			    <input type="radio" name="options_rol" autocomplete="off"> 预言家
+			  </label>
+			  <label class="btn btn-default" data-name="witch">
+			    <input type="radio" name="options_rol" autocomplete="off"> 女巫
+			  </label>
+			  <label class="btn btn-default" data-name="hunter">
+			    <input type="radio" name="options_rol" autocomplete="off"> 猎人
+			  </label>
+			  <label class="btn btn-default" data-name="human">
+			    <input type="radio" name="options_rol" autocomplete="off"> 平民
+			  </label>
+			</div>
+		</span>
+
+		<span class="order">
+			<div class="btn-group" data-toggle="buttons">
+			  <label class="btn btn-default active" data-order="desc">
+			    <input type="radio" name="options_order" autocomplete="off" checked> 高 -> 低
+			  </label>
+			  <label class="btn btn-default" data-order="asc">
+			    <input type="radio" name="options_order" autocomplete="off"> 低 -> 高
+			  </label>
+			</div>
+		</span>
+	</div>
+
+	<div class="statisticContainer">
+		<table class="table">
+			<thead>
+				<tr>
+					<td class="player_thumbnail">玩家</td>
+					<td class="player_name">玩家</td>
+					<td class="total">总场数</td>
+					<td class="rate">胜率</td>
+					<!-- <td class="trend">排名</td> -->
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
 </div>

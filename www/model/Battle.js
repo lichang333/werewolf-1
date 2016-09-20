@@ -28,18 +28,17 @@ BattleSchema.statics.add = function* (info){
 };
 
 
-BattleSchema.statics.delete = function* (playerName){
+BattleSchema.statics.deleteById = function* (id){
 	var BattleModel = this;
-	BattleModel.remove({name: playerName}).exec();
+	BattleModel.remove({"_id": id}).exec();
 	return;
 }
 
 BattleSchema.statics.findAll = function* (){
 	console.log("in find all ...");
 	var BattleModel = this;
-	var players = yield BattleModel.find({});
-	console.log(players);
-	return players;
+	var battles = yield BattleModel.find({}, null, {sort: {"createtime": -1}});
+	return battles;
 }
 
 function formatDateTime(date){

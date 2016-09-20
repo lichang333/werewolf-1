@@ -6,7 +6,8 @@ var parser = require("co-body");
 var router = require("koa-router")();
 var mongoose = require("mongoose");
 
-var ip = "192.168.1.100";
+// var ip = "192.168.1.100";
+var ip = "192.168.196.184";
 
 mongoose.connect("mongodb://" + ip + "/test");
 mongoose.connection.on("error", (err) => console.error("mongodb connection error", err));
@@ -51,6 +52,15 @@ router.post("/battles", function *(next){
 	yield BattleModel.add(infos);
 	this.body = "";
 });
+
+router.delete("/battles", function *(next){
+	console.log("in delete battles ");
+	var params = yield parser(this);
+	var battleId = params.battleId;
+	yield BattleModel.deleteById(battleId)
+	this.body = "";
+});
+
 
 
 app.use(router.routes());

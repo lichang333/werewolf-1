@@ -1,21 +1,35 @@
 var common = (function(){
 
-	var props = {};
+	var props = {
+		"device": null,
+		"players": null
+	};
 
 
 	function init() {
-		// initJquery();
+		initPlayers();
 		bindEvent();
 	}
 
-	function initJquery(){
-		var ip = "192.168.1.100";
+	function initPlayers(callback){
+		majax("/players", {
+			method: "get"
+		}).then(function(result){
+			props.players = result;
+			if(callback){
+				callback();
+			}
+		}, function(e){
+			alert("error");
+		})
+	}
+
+	function majax(url, params){
+		// var ip = "192.168.1.100";
+		var ip = "192.168.196.184";
 		var port = "3000";
-		var oldAjax = $.ajax;
-		$.ajax = function(url, params){
-			url = "http://" + ip + ":" + port + url;
-			return oldAjax.call(url, params);
-		}
+		url = "http://" + ip + ":" + port + url;
+		return $.ajax(url, params);
 	}
 
 	function bindEvent(){
@@ -47,6 +61,8 @@ var common = (function(){
 
 	return {
 		"init": init,
+		"initPlayers": initPlayers,
+		"majax": majax, 
 		"loadPage": loadPage,
 		"props": props
 	};
