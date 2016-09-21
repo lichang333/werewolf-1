@@ -108,16 +108,31 @@
     * 运行  
     http://localhost:3000/index.html
 
+* 学习到的内容
+
+    * CSP   
+    
+        * CSP是浏览器的安全策略
+
+        * CSP是白名单策略，通过白名单来限制资源的加载，从而达到防范XSS目的
+
+        * CSP设定的2种方法
+        http头的`Content-Security-Policy`段  
+        html的meta标签`<meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none'; style-src cdn.example.org third-party.org; child-src https:">`
+
+        * 看看阮一峰老师介绍 [http://www.ruanyifeng.com/blog/2016/09/csp.html](http://www.ruanyifeng.com/blog/2016/09/csp.html)
+
 * 其他问题记录
 
     * 编译成android后，发现ajax请求不能跨域
 
         * 所有ajax的url都写绝对路径， http://10.12.23.22:3000/players
-        * html头上设定安全规则  
-        `<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">`
+        * html头上设定CSP安全规则  
+        `<meta http-equiv="Content-Security-Policy" content="default-src *; image-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">`
 
     * 2处需要修改ip地址的地方
 
         * common.js
         * server.js
+
 
