@@ -102,6 +102,9 @@
     npm install
     ```
 
+    * mongodb启动
+    mongod
+
     * 启动  
     nodemon server.js
 
